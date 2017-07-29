@@ -1,0 +1,14 @@
+message VectorProto {
+	repeated double elements = 1;
+};
+
+message SVMInputProto {
+	required int32 numVars = 1;
+	required VectorProto alpha = 2;	
+};
+
+message SVMStaticInputProto {
+	required int32 numVars = 1;
+	required VectorProto y = 2;
+	required double C = 3;
+};
